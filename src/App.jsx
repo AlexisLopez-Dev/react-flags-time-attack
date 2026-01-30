@@ -1,13 +1,13 @@
 import datos from './datos.json';
 import { useState } from 'react';
 import { GameZone } from './components/GameZone';
+import { Ranking } from './components/Ranking';
 
 function App() {
 
   const [paises] = useState(()=>{
     return [...datos].sort(() => Math.random() - 0.5)
   });
-  
 
   const [contador, setContador] = useState(0);
 
@@ -21,14 +21,12 @@ function App() {
   if (contador >= 5){
     return(
       <>
-        <h1>¡Juego terminado!</h1>
-        <h3>Puntuación total: {puntos}</h3>
+        <Ranking puntos={puntos}></Ranking>
       </>
     )
   }
 
   const paisActual = paises[contador];
-
   return (
     
     <>
