@@ -1,52 +1,102 @@
 [
   {
-    "pais": "España",
+    "nombre": "España",
     "continente": "Europa",
     "url": "https://flagcdn.com/w320/es.png"
   },
   {
-    "pais": "Japón",
+    "nombre": "Japón",
     "continente": "Asia",
     "url": "https://flagcdn.com/w320/jp.png"
   },
   {
-    "pais": "Brasil",
+    "nombre": "Brasil",
     "continente": "América del Sur",
     "url": "https://flagcdn.com/w320/br.png"
   },
   {
-    "pais": "Estados Unidos",
+    "nombre": "Estados Unidos",
     "continente": "América del Norte",
     "url": "https://flagcdn.com/w320/us.png"
   },
   {
-    "pais": "Egipto",
+    "nombre": "Egipto",
     "continente": "África",
     "url": "https://flagcdn.com/w320/eg.png"
   },
   {
-    "pais": "Australia",
+    "nombre": "Australia",
     "continente": "Oceanía",
     "url": "https://flagcdn.com/w320/au.png"
   },
   {
-    "pais": "Francia",
+    "nombre": "Francia",
     "continente": "Europa",
     "url": "https://flagcdn.com/w320/fr.png"
   },
   {
-    "pais": "India",
+    "nombre": "India",
     "continente": "Asia",
     "url": "https://flagcdn.com/w320/in.png"
   },
   {
-    "pais": "Canadá",
+    "nombre": "Canadá",
     "continente": "América del Norte",
     "url": "https://flagcdn.com/w320/ca.png"
   },
   {
-    "pais": "Argentina",
+    "nombre": "Argentina",
     "continente": "América del Sur",
     "url": "https://flagcdn.com/w320/ar.png"
+  },
+  {
+    "nombre": "Alemania",
+    "continente": "Europa",
+    "url": "https://flagcdn.com/w320/de.png"
+  },
+  {
+    "nombre": "México",
+    "continente": "América del Norte",
+    "url": "https://flagcdn.com/w320/mx.png"
+  },
+  {
+    "nombre": "Italia",
+    "continente": "Europa",
+    "url": "https://flagcdn.com/w320/it.png"
+  },
+  {
+    "nombre": "China",
+    "continente": "Asia",
+    "url": "https://flagcdn.com/w320/cn.png"
+  },
+  {
+    "nombre": "Reino Unido",
+    "continente": "Europa",
+    "url": "https://flagcdn.com/w320/gb.png"
+  },
+  {
+    "nombre": "Sudáfrica",
+    "continente": "África",
+    "url": "https://flagcdn.com/w320/za.png"
+  },
+  {
+    "nombre": "Colombia",
+    "continente": "América del Sur",
+    "url": "https://flagcdn.com/w320/co.png"
+  },
+  {
+    "nombre": "Corea del Sur",
+    "continente": "Asia",
+    "url": "https://flagcdn.com/w320/kr.png"
+  },
+  {
+    "nombre": "Turquía",
+    "continente": "Asia/Europa",
+    "url": "https://flagcdn.com/w320/tr.png"
+  },
+  {
+    "nombre": "Grecia",
+    "continente": "Europa",
+    "url": "https://flagcdn.com/w320/gr.png"
   }
 ]
