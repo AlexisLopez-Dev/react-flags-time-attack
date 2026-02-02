@@ -38,7 +38,7 @@ export const Ranking = ({puntos}) => {
 
   return (
     <>
-        <h1>¡Partida terminada!</h1>
+        <h1 id="titulo-final">¡Partida terminada!</h1>
         <h3>Puntuación total: {puntos}</h3>
 
         {guardado ? (
@@ -51,7 +51,7 @@ export const Ranking = ({puntos}) => {
                         ...register('nombreUsuario')
                     }
                 />
-                <button>Guardar record</button>
+                <button id="btn-guardar">Guardar record</button>
             </form>
         )}
 
@@ -71,7 +71,10 @@ export const Ranking = ({puntos}) => {
             </ul>
         </div>
 
-        <button onClick={() => window.location.reload()} style={{marginTop:'20px'}}>
+        <button 
+             id="btn-reiniciar"
+             onClick={() => window.location.reload()} 
+             style={{marginTop:'20px'}}>
              Jugar otra vez
         </button>
     </>

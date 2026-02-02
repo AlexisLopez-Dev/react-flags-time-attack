@@ -31,7 +31,8 @@ body {
   border: 1px solid #334155;
 }
 
-#titulo-juego {
+#titulo-juego,
+#titulo-final {
   font-size: 2.2em;
   line-height: 1.1;
   margin-bottom: 0.5rem;
@@ -90,7 +91,9 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
 }
 
-button {
+#btn-enviar,
+#btn-guardar,
+#btn-reiniciar {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.75em 1.5em;
@@ -106,12 +109,16 @@ button {
   margin-top: 8px;
 }
 
-button:hover {
+#btn-enviar:hover,
+#btn-guardar:hover,
+#btn-reiniciar:hover {
   background-color: #4f46e5;
   transform: translateY(-1px);
 }
 
-button:active {
+#btn-enviar:active,
+#btn-guardar:active,
+#btn-reiniciar:active {
   transform: translateY(0);
 }
 

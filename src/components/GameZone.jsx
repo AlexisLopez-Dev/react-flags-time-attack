@@ -38,7 +38,7 @@ export const GameZone = ({rondaActual, paisActual, alTerminarTurno}) => {
           />
           <p> {errors.nombreInput?.message} </p>
 
-          <button type="submit" >Enviar</button>
+          <button type="submit" id="btn-enviar">Enviar</button>
         </form>
     </>
   )
