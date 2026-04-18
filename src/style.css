@@ -1,185 +1,37 @@
-:root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: dark;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: #0f172a;
+@import "tailwindcss";
+
+@theme {
+  --animate-feedback-shake: feedback-shake 0.45s ease-in-out 2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: #0f172a;
-  background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-                    radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+@keyframes feedback-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px);
+  }
+  40% {
+    transform: translateX(8px);
+  }
+  60% {
+    transform: translateX(-6px);
+  }
+  80% {
+    transform: translateX(6px);
+  }
 }
 
-#root {
-  max-width: 550px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 2.5rem;
-  text-align: center;
-  background-color: #1e293b;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border: 1px solid #334155;
-}
+@layer base {
+  body {
+    @apply m-0 min-h-screen min-w-[320px] antialiased text-slate-100;
+    @apply bg-slate-950;
+    background-image: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+  }
 
-#titulo-juego,
-#titulo-final {
-  font-size: 2.2em;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-  color: #f8fafc;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-}
-
-h3 {
-  color: #94a3b8;
-  margin-top: 0;
-  font-weight: 500;
-  font-size: 1.1em;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  max-height: 280px;
-  border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-  object-fit: cover;
-  border: 1px solid #334155;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-}
-
-label {
-  font-size: 1em;
-  font-weight: 500;
-  color: #e2e8f0;
-}
-
-#input-respuesta {
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: 1px solid #475569;
-  background-color: #0f172a;
-  color: white;
-  font-size: 1em;
-  width: 100%;
-  max-width: 320px;
-  transition: all 0.2s;
-}
-
-#input-respuesta:focus {
-  outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
-}
-
-#btn-enviar,
-#btn-guardar,
-#btn-reiniciar {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
-  font-weight: 600;
-  font-family: inherit;
-  background-color: #6366f1;
-  color: white;
-  cursor: pointer;
-  transition: all 0.2s;
-  width: 100%;
-  max-width: 320px;
-  margin-top: 8px;
-}
-
-#btn-enviar:hover,
-#btn-guardar:hover,
-#btn-reiniciar:hover {
-  background-color: #4f46e5;
-  transform: translateY(-1px);
-}
-
-#btn-enviar:active,
-#btn-guardar:active,
-#btn-reiniciar:active {
-  transform: translateY(0);
-}
-
-p {
-  color: #f87171;
-  font-size: 0.9em;
-  margin: 4px 0 0 0;
-  min-height: 1.2em;
-  font-weight: 500;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 25px auto 0;
-  max-width: 400px;
-  text-align: left;
-}
-
-li {
-  background-color: #0f172a;
-  margin-bottom: 8px;
-  padding: 12px 16px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #334155;
-}
-
-strong {
-  font-weight: 600;
-  color: #fff;
-}
-
-.timer-container {
-  width: 100%;
-  height: 16px;
-  background-color: #334155;
-  border-radius: 9999px;
-  margin-top: 24px;
-  overflow: hidden;
-}
-
-.timer-bar {
-  height: 100%;
-  background-color: #6366f1;
-  transition: width 1s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-}
-
-.timer-bar.critical {
-  background-color: #ef4444;
-}
-
-.timer-text {
-  font-size: 10px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  #root {
+    @apply mx-auto grid min-h-screen w-full max-w-[1200px] items-center px-3 py-3 sm:px-4 sm:py-5 md:px-6 md:py-8;
+  }
 }
