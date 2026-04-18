@@ -1,4 +1,6 @@
-# 🏳️ Diversión con Banderas - React Time Attack
+# <img src="./public/favicon-flag.svg" width="40" align="center" alt="Logo Bandera" /> Diversión con Banderas - React Time Attack
+
+[![Jugar Demo](https://img.shields.io/badge/Jugar_Demo_en_Vivo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://react-flags-time-attack.vercel.app/)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
